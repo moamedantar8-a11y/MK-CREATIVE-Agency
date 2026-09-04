@@ -290,7 +290,7 @@
             font-weight: 800;
         }
 
-        /* About Section (Enhanced) */
+        /* About Section */
         .about-section {
             padding: 80px 5%;
             background-color: var(--card-bg);
@@ -950,7 +950,7 @@
         </div>
     </section>
 
-    <!-- About Section (Expanded) -->
+    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="about-container">
             <h2 class="section-title" style="margin-top: 0;" data-i18n="about_title">من نحن</h2>
@@ -1021,7 +1021,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section (With Real User Projects) -->
+    <!-- Portfolio Section -->
     <section id="portfolio">
         <h2 class="section-title" data-i18n="portfolio_title">معرض الأعمال والمشاريع</h2>
         <div class="portfolio-grid">
@@ -1304,7 +1304,6 @@
 
     <!-- JavaScript for Interactions & Multi-Language System -->
     <script>
-        // Translations Dictionary
         const translations = {
             ar: {
                 page_title: "MK Creative Agency | وكالة إم كيه الإبداعية",
@@ -1510,7 +1509,6 @@
             }
         };
 
-        // Language Toggle Logic
         const langToggle = document.getElementById('lang-toggle');
         const langText = document.getElementById('lang-text');
         const htmlRoot = document.getElementById('html-root');
@@ -1529,7 +1527,6 @@
             htmlRoot.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
             langText.textContent = lang === 'ar' ? 'EN' : 'AR';
 
-            // Translate all elements with data-i18n
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[lang][key]) {
@@ -1537,7 +1534,6 @@
                 }
             });
 
-            // Translate placeholders
             document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
                 const key = el.getAttribute('data-i18n-placeholder');
                 if (translations[lang][key]) {
@@ -1546,7 +1542,6 @@
             });
         }
 
-        // Theme Toggle Logic
         const themeToggle = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
         const body = document.body;
@@ -1571,7 +1566,6 @@
             }
         }
 
-        // FAQ Accordion Logic
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentElement;
@@ -1579,7 +1573,6 @@
             });
         });
 
-        // Reading Progress Bar & Back to Top Visibility
         window.addEventListener('scroll', () => {
             let winScroll = document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
