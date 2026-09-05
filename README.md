@@ -290,7 +290,7 @@
             font-weight: 800;
         }
 
-        /* About Section */
+        /* About Section (Enhanced) */
         .about-section {
             padding: 80px 5%;
             background-color: var(--card-bg);
@@ -950,7 +950,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (Expanded) -->
     <section id="about" class="about-section">
         <div class="about-container">
             <h2 class="section-title" style="margin-top: 0;" data-i18n="about_title">من نحن</h2>
@@ -1021,7 +1021,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section (With Real User Projects) -->
     <section id="portfolio">
         <h2 class="section-title" data-i18n="portfolio_title">معرض الأعمال والمشاريع</h2>
         <div class="portfolio-grid">
@@ -1181,7 +1181,7 @@
                     <p data-i18n="art_1_desc">استكشف كيف نقوم بتمكين الجيل القادم من المبدعين والمطورين بأحدث الأدوات والمهارات التقنية...</p>
                 </div>
                 <a href="https://www.linkedin.com/posts/mk-creative-agency36_mk-creative-agency-empowers-the-next-generation-activity-7501650908510879744-UNjc?utm_source=share&utm_medium=member_android&rcm=ACoAAGedAaoBHEiudTvVQc0BQ94lZLdiW48h4tA" target="_blank" class="read-more-btn">
-                    <span data-i18n="read_more">Read more</span> <i class="fa-solid fa-arrow-left"></i>
+                    <span data-i18n="read_read_more">Read more</span> <i class="fa-solid fa-arrow-left"></i>
                 </a>
             </div>
             <div class="article-card">
@@ -1240,6 +1240,34 @@
                 </div>
                 <div class="faq-answer" data-i18n="faq_a3">
                     يتم مراجعة البيانات المدخلة في الاستمارة بعناية والتواصل مع المرشحين المقبولين عبر وسائل الاتصال المتاحة.
+                </div>
+            </div>
+            <!-- الأسئلة الشائعة الجديدة المضافة -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-i18n="faq_q4">ما هي التقنيات واللغات المستخدمة في تطوير مشاريع الوكالة؟</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" data-i18n="faq_a4">
+                    نعتمد على أحدث لغات وتقنيات الويب الحديثة مثل HTML5، CSS3، JavaScript، بالإضافة إلى أدوات وقواعد البيانات المتقدمة لضمان أداء سريع وآمن للمشاريع.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-i18n="faq_q5">هل تقدم الوكالة خدمات مخصصة للشركات الناشئة وصناع المحتوى؟</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" data-i18n="faq_a5">
+                    نعم، نقدم حلولاً وباقات مصممة خصيصاً لتناسب احتياجات الشركات الناشئة، المطورين، وصناع المحتوى الرقمي لمساعدتهم على النمو والتوسع بسرعة.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-i18n="faq_q6">كيف يمكنني متابعة أحدث أخبار ومشاريع الوكالة؟</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer" data-i18n="faq_a6">
+                    يمكنك متابعتنا عبر صفحتنا الرسمية على لينكد إن، الانضمام إلى مجتمعنا على ديسكورد، أو الاشتراك في النشرة البريدية الأسبوعية ليصلك كل جديد.
                 </div>
             </div>
         </div>
@@ -1304,6 +1332,7 @@
 
     <!-- JavaScript for Interactions & Multi-Language System -->
     <script>
+        // Translations Dictionary
         const translations = {
             ar: {
                 page_title: "MK Creative Agency | وكالة إم كيه الإبداعية",
@@ -1391,10 +1420,16 @@
                 faq_a2: "نبحث دائماً عن الشغف، المهارة الجيدة، والالتزام بتطوير المشاريع الرقمية والتقنية باحترافية تامة.",
                 faq_q3: "كيف يتم التواصل بعد تقديم الاستمارة؟",
                 faq_a3: "يتم مراجعة البيانات المدخلة في الاستمارة بعناية والتواصل مع المرشحين المقبولين عبر وسائل الاتصال المتاحة.",
+                faq_q4: "ما هي التقنيات واللغات المستخدمة في تطوير مشاريع الوكالة؟",
+                faq_a4: "نعتمد على أحدث لغات وتقنيات الويب الحديثة مثل HTML5، CSS3، JavaScript، بالإضافة إلى أدوات وقواعد البيانات المتقدمة لضمان أداء سريع وآمن للمشاريع.",
+                faq_q5: "هل تقدم الوكالة خدمات مخصصة للشركات الناشئة وصناع المحتوى؟",
+                faq_a5: "نعم، نقدم حلولاً وباقات مصممة خصيصاً لتناسب احتياجات الشركات الناشئة، المطورين، وصناع المحتوى الرقمي لمساعدتهم على النمو والتوسع بسرعة.",
+                faq_q6: "كيف يمكنني متابعة أحدث أخبار ومشاريع الوكالة؟",
+                faq_a6: "يمكنك متابعتنا عبر صفحتنا الرسمية على لينكد إن، الانضمام إلى مجتمعنا على ديسكورد، أو الاشتراك في النشرة البريدية الأسبوعية ليصلك كل جديد.",
                 news_title: "انضم إلى MK Creative Agency Newsletters",
                 news_desc: "احصل على أحدث التحديثات، التقارير التقنية، والعروض الحصرية مباشرة في بريدك الإلكتروني أسبوعياً.",
                 news_placeholder: "أدخل بريدك الإلكتروني هنا...",
-                news_btn: "اشتراك الآن",
+                news_btn: "اشترك الآن",
                 footer_desc: "مؤسسة رقمية رائدة متخصصة في الحلول التقنية والإبداعية.",
                 footer_discord: "ديسكورد:",
                 footer_discord_link: "انضم لمجتمعنا",
@@ -1492,6 +1527,12 @@
                 faq_a2: "We always look for passion, strong skills, and commitment to developing digital and technical projects professionally.",
                 faq_q3: "How is communication handled after submitting the form?",
                 faq_a3: "The submitted data is carefully reviewed, and accepted candidates are contacted through available communication channels.",
+                faq_q4: "What technologies and languages are used in developing agency projects?",
+                faq_a4: "We rely on modern web technologies and languages such as HTML5, CSS3, JavaScript, alongside advanced tools and databases to ensure fast and secure project performance.",
+                faq_q5: "Does the agency offer tailored services for startups and content creators?",
+                faq_a5: "Yes, we provide solutions and packages specifically designed to suit the needs of startups, developers, and digital content creators to help them grow and expand rapidly.",
+                faq_q6: "How can I stay updated with the agency's latest news and projects?",
+                faq_a6: "You can follow us on our official LinkedIn page, join our Discord community, or subscribe to the weekly newsletter to stay informed.",
                 news_title: "Join MK Creative Agency Newsletters",
                 news_desc: "Get the latest updates, tech reports, and exclusive offers directly in your inbox weekly.",
                 news_placeholder: "Enter your email here...",
@@ -1509,6 +1550,7 @@
             }
         };
 
+        // Language Toggle Logic
         const langToggle = document.getElementById('lang-toggle');
         const langText = document.getElementById('lang-text');
         const htmlRoot = document.getElementById('html-root');
@@ -1527,6 +1569,7 @@
             htmlRoot.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
             langText.textContent = lang === 'ar' ? 'EN' : 'AR';
 
+            // Translate all elements with data-i18n
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[lang][key]) {
@@ -1534,6 +1577,7 @@
                 }
             });
 
+            // Translate placeholders
             document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
                 const key = el.getAttribute('data-i18n-placeholder');
                 if (translations[lang][key]) {
@@ -1542,6 +1586,7 @@
             });
         }
 
+        // Theme Toggle Logic
         const themeToggle = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
         const body = document.body;
@@ -1566,6 +1611,7 @@
             }
         }
 
+        // FAQ Accordion Logic
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentElement;
@@ -1573,6 +1619,7 @@
             });
         });
 
+        // Reading Progress Bar & Back to Top Visibility
         window.addEventListener('scroll', () => {
             let winScroll = document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
